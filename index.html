@@ -16,13 +16,15 @@
       <div class="container">
         <nav>
           <img src="/fotos/black-logo.png" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul id="sidebar">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
         <div class="header-text">
           <p>UI/UX Designer</p>
@@ -225,10 +227,20 @@
         </div>
       </div>
     </div>
+    <a href="#header" id="scroll-top">
+      <i class="fa-solid fa-caret-up"></i>
+    </a>
 
     <main class="" id=""></main>
     <footer>
-      <div class="my-foot"></div>
+      <div class="my-footer">
+        <ul>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Galeri</a></li>
+          <li><a href="">Works</a></li>
+        </ul>
+      </div>
+      <p class="copyrights">&copy; Mehmet Yavas. All rights reserved.</p>
     </footer>
 
     <script src="./script.js"></script>

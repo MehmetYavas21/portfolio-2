@@ -12,3 +12,13 @@ function opentab(tabname) {
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
 }
+
+const sidebar = document.getElementById("sidebar");
+
+function openMenu() {
+  sidebar.style.right = "0";
+}
+
+function closeMenu() {
+  sidebar.style.right = "-200px";
+}
