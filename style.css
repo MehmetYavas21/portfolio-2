@@ -13,7 +13,7 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(/fotos/left.HEIC);
+  background-image: url("./fotos/dark-left.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -27,13 +27,20 @@ nav {
   flex-wrap: wrap;
 }
 .logo {
-  width: 80px;
-  height: 40px;
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  zoom: 1;
+}
+
+.logo:hover {
+  width: 125px;
+  transition: width 0.5s ease;
 }
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 10px 2px;
+  margin: 10px 8px;
 }
 nav ul li a {
   color: #fff;
