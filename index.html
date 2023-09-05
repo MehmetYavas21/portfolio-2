@@ -208,7 +208,7 @@
             ></a>
           </div>
           <div class="contact-right">
-            <form>
+            <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
                 type="email"
@@ -221,8 +221,9 @@
                 rows="6"
                 placeholder="Write your message..."
               ></textarea>
-              <button type="submit" class="btn btn2" onclick="">Send</button>
+              <button type="submit" class="btn btn2">Send</button>
             </form>
+            <span id="msg"></span>
           </div>
         </div>
       </div>
@@ -243,6 +244,26 @@
       <p class="copyrights">&copy; Mehmet Yavas. All rights reserved.</p>
     </footer>
 
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxquV6U5c5v67FUKs35n8tutnYU3GhMHLhjrstU7VnLjliarGxEaU0KsmtB2zyP4f9MSA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Your message has been sent successfully!";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>

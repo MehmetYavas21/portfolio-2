@@ -379,6 +379,12 @@ nav .fa-solid {
   justify-content: center;
 }
 
+#msg {
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
+}
+
 /* media query */
 
 @media (max-width: 500px) {
