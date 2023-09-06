@@ -22,3 +22,29 @@ function openMenu() {
 function closeMenu() {
   sidebar.style.right = "-200px";
 }
+
+// submit form
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbzeUELthlhOMsDMLRHyMp4Sjj67delzSZz8ZQY7cAD-BZ7wC2Duv6t_DkzbDSXgYsd4/exec";
+const form = document.forms["submit-to-google-sheet"];
+
+const msg = document.getElementById("msg");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      msg.innerHTML = "Your message has been sent successfully!";
+      setTimeout(() => {
+        msg.innerHTML = "";
+      }, 5000);
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
+
+const copyright = document.getElementById("copyright");
+const getDate = new Date().getFullYear();
+
+copyright.innerHTML = `&copy; Mehmet Yavas ${getDate}. All rights reserved.`;

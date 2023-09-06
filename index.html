@@ -143,7 +143,7 @@
                 four pages. User can see details, add event or edit or delete
                 events.
               </p>
-              <a href="#"
+              <a href="https://letsenjoy.netlify.app/" target="_blank"
                 ><i class="fa-sharp fa-solid fa-up-right-from-square"></i
               ></a>
             </div>
@@ -156,7 +156,7 @@
                 This is a Javascript advanced project. You can search for movies
                 or filter them based on types.
               </p>
-              <a href="#"
+              <a href="https://bestmoviesinfo.netlify.app/" target="_blank"
                 ><i class="fa-sharp fa-solid fa-up-right-from-square"></i
               ></a>
             </div>
@@ -169,7 +169,7 @@
                 This is a static React app. The user can search for recipes and
                 navigate to a details page.
               </p>
-              <a href="#"
+              <a href="https://getbestrecipe.netlify.app/" target="_blank"
                 ><i class="fa-sharp fa-solid fa-up-right-from-square"></i
               ></a>
             </div>
@@ -196,6 +196,9 @@
               <a href=""><i class="fa-brands fa-x-twitter"></i></a>
               <a href=""><i class="fa-brands fa-instagram"></i></a>
               <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/MehmetYavas21" target="_blank"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
             </div>
             <a
               href="./fotos/WD- Lebenslauf - mehmet yavas.pdf"
@@ -241,29 +244,9 @@
           <li><a href="">Works</a></li>
         </ul>
       </div>
-      <p class="copyrights">&copy; Mehmet Yavas. All rights reserved.</p>
+      <p class="copyrights" id="copyright"></p>
     </footer>
 
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbxquV6U5c5v67FUKs35n8tutnYU3GhMHLhjrstU7VnLjliarGxEaU0KsmtB2zyP4f9MSA/exec";
-      const form = document.forms["submit-to-google-sheet"];
-
-      const msg = document.getElementById("msg");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Your message has been sent successfully!";
-            setTimeout(() => {
-              msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
     <script src="./script.js"></script>
   </body>
 </html>
