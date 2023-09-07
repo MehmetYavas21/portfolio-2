@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" name="style/text" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehmet Yavas</title>
+    <script
+      src="https://kit.fontawesome.com/759c198784.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="/fotos/black-logo.png" class="logo" />
+          <ul id="sidebar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="jobs-done">
+            <div class="enjoy">
+                <img src="./fotos/enjoy-main.png" >
+                <img src="./fotos/enjoy-user-detail.png" >
+                <img src="./fotos/enjoy-add-form.png" >
+                <img src="./fotos/enjoy-mobile.png" >
+            </div>
+            <div class="films">
+                <img src="./fotos/film-finder-main.png" >
+                <img src="./fotos/film-finder-radio.png" >
+            </div>
+            <div class="recipepage">
+                <img src="./fotos/recipe-searcher-main.png" >
+                <img src="./fotos/recipe-searcher-details.png" >
+            </div>
+        </div>
+
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>fzt.mehmetyavas@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +491626845253</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/profile.php?id=100006736184630"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/Fzt_Mehmet" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/mervanrezan/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/mehmet-yavas21?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHtGy9WT1TcqA43vj%2Bnj8nw%3D%3D"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/MehmetYavas21" target="_blank"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+            </div>
+            <a
+              href="./fotos/WD- Lebenslauf - mehmet yavas.pdf"
+              download
+              class="btn btn2"
+              >Download CV<i
+                class="fa-solid fa-download"
+                style="margin-left: 10px"
+              ></i
+            ></a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Write your message..."
+              ></textarea>
+              <button type="submit" class="btn btn2">Send</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#header" id="scroll-top">
+      <i class="fa-solid fa-caret-up"></i>
+    </a>
+
+    <main class="" id=""></main>
+    <footer>
+      <div class="my-footer">
+        <ul>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Galeri</a></li>
+          <li><a href="">Works</a></li>
+        </ul>
+      </div>
+      <p class="copyrights" id="copyright"></p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

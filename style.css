@@ -385,6 +385,21 @@ nav .fa-solid {
   margin-top: -40px;
   display: block;
 }
+.jobs-done {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.enjoy img {
+  width: 250px;
+}
+.films img {
+  width: 250px;
+}
+.recipepage img {
+  width: 250px;
+}
 
 /* media query */
 
