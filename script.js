@@ -46,5 +46,8 @@ form.addEventListener("submit", (e) => {
 
 const copyright = document.getElementById("copyright");
 const getDate = new Date().getFullYear();
+copyright.style.textDecoration = "none";
+copyright.style.color = "#ffdd";
+copyright.style.padding = "5px";
 
 copyright.innerHTML = `&copy; Mehmet Yavas ${getDate}. All rights reserved.`;
