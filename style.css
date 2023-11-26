@@ -45,6 +45,11 @@ nav ul li {
   list-style: none;
   margin: 10px 8px;
 }
+
+a {
+  text-decoration: none;
+  color: #ffdd;
+}
 nav ul li a {
   color: #fff;
   text-decoration: none;
