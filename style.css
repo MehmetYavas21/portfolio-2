@@ -336,6 +336,10 @@ form .btn2 {
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
+  transition: background 0.5s;
+}
+form .btn2:hover {
+  background: #992e2e;
 }
 
 .my-footer ul {

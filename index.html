@@ -262,7 +262,36 @@
               ></i
             ></a>
           </div>
-          <div class="contact-right">
+          <div class="contact-form contact-right">
+            <form id="contactForm" onsubmit="submitForm(e)">
+              <label for="name">Name: </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Type your name"
+                required
+              />
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@mail.com"
+                required
+              />
+              <label for="message"> Message: </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Leave your message here!"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Send</button>
+            </form>
+          </div>
+          <!-- <div class="contact-right">
             <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
@@ -279,7 +308,7 @@
               <button type="submit" class="btn btn2">Send</button>
             </form>
             <span id="msg"></span>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
