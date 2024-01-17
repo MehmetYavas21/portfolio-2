@@ -77,3 +77,12 @@ copyright.style.color = "#ffdd";
 copyright.style.padding = "5px";
 
 copyright.innerHTML = `&copy; Mehmet Yavas ${getDate}. All rights reserved.`;
+
+const pictures = document.querySelectorAll(".enjoy img");
+
+Array.from(pictures).forEach((picture) => {
+  picture.addEventListener("click", function (e) {
+    const image = e.target;
+    console.log(image);
+  });
+});
